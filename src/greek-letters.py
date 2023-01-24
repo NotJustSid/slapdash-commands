@@ -1,4 +1,4 @@
-import slap_utils as su
+import util.slap_utils as su
 from fuzzywuzzy import process
 
 import json

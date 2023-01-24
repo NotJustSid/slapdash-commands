@@ -1,5 +1,5 @@
 import screen_brightness_control as sbc
-import slap_utils as su
+import util.slap_utils as su
 import json
 
 brightness_levels = [0, 25, 50, 75, 100]
