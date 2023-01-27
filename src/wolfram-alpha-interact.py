@@ -2,6 +2,7 @@ import util.slap_utils as su
 import requests
 import json
 import base64
+from urllib.parse import quote_plus
 
 encoded = base64.b64encode(b'Hello World!')
 
@@ -32,7 +33,8 @@ if query is None:
     }
 else:
     # Convert the query to a URL-friendly format
-    query = query.replace(' ', '+')
+    query = quote_plus(query)
+
     response = requests.get(base_url + query).json()
 
     image_urls = []
